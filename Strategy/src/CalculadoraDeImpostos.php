@@ -2,10 +2,12 @@
 
 namespace App\Strategy;
 
+use App\Strategy\Contracts\Imposto;
+
 class CalculadoraDeImpostos
 {
-    public function calcula(Orcamento $orcamento)
+    public function calcula(Orcamento $orcamento, Imposto $imposto): float
     {
-        return $orcamento->getValor() * 0.1;
+        return $imposto->calcula($orcamento);
     }
 }
