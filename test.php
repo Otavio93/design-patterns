@@ -1,6 +1,5 @@
 <?php
-require __DIR__ . '/../vendor/autoload.php';
-// namespace App\Strategy;
+require __DIR__ . '/vendor/autoload.php';
 
 use App\Strategy\CalculadoraDeImpostos;
 use App\Strategy\Icms;
