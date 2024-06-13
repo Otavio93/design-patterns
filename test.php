@@ -27,3 +27,8 @@ if ($calculadoraDesconto->calcula($orcamento) !== 20.00) {
     throw new \Exception("Erro ao calcular desconto de 10 itens");
 }
 echo "Desconto 20%: " . $calculadoraDesconto->calcula($orcamento) . "\n";
+
+echo "# Template Method: TODO\n";
+
+echo PHP_EOL;
+
