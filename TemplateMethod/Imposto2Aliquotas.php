@@ -7,7 +7,7 @@ use App\Strategy\Orcamento;
 
 abstract class Imposto2Aliquotas implements Imposto
 {
-    public function calcula(Orcamento $orcamento): float
+    final public function calcula(Orcamento $orcamento): float
     {
         if ($this->deveUsarMaximaTaxacao($orcamento)) {
             return $this->maximaTaxacao($orcamento);
